@@ -18,7 +18,12 @@
         <div id="login">
             <div id="login_box">
                 <div id="login_box_title"><h3>Login</h3></div>
-                <form action="" method="POST">
+								<?php
+									if(isset($error)){
+										echo '<div class="alert-danger">'.$error.'</div>';
+									}
+								?>
+                <form action="<?php echo site_url('login');?>" method="POST">
                     <input id="identitas" class="form-control" type="email" name="identitas" placeholder="Masukkan email" autofocus autocomplete required/>
                     <br>
                     <input id="kunci_rahasia" class="form-control" type="password" name="kunci_rahasia" placeholder="Masukkan kata sandi" required/>

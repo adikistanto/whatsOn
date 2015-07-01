@@ -1,10 +1,10 @@
 <html>
 	<head>
 		<title>WhatsOn</title>
-		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="assets/css/fajar.css" type="text/css" media="screen" />
-		<script src="assets/bootstrap/js/jquery-1.11.2.min.js"></script>
-		<script src="assets/bootstrap/js/bootstrap.js"></script>  
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap/css/bootstrap.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/fajar.css" type="text/css" media="screen" />
+		<script src="<?php echo base_url();?>assets/bootstrap/js/jquery-1.11.2.min.js"></script>
+		<script src="<?php echo base_url();?>assets/bootstrap/js/bootstrap.js"></script>  
 	</head>
 	<body>
 		<div id="wrapper">
@@ -26,13 +26,13 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-								<li><a href="#"><div class="icon"><img src="assets/images/pemberitahuan.png" /></div></a></li>
-								<li><a href="#"><div class="icon"><img src="assets/images/pesan.png" /></div></a></li>
-								<li><a href="#"><div class="icon"><img src="assets/images/teman.png" /></div></a></li>
+								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/pemberitahuan.png" /></div></a></li>
+								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/pesan.png" /></div></a></li>
+								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/teman.png" /></div></a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#"><div class="icon"><img src="assets/images/default-profil.png" /></div></a></li>
-								<li><a href="#"><div class="icon"><img src="assets/images/pengaturan.png" /></div></a></li>
+								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/default-profil.png" /></div></a></li>
+								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/pengaturan.png" /></div></a></li>
 							</ul>
 							<form class="navbar-form navbar-right" role="search">
 								<div class="form-group">
@@ -48,32 +48,38 @@
 			<div id="content">
 				<div id="col1" class="col-md-2">
 					<div id="profile_photo" class="col-md-12">
-						<div id="photo">
-							<img src="assets/images/pemberitahuan.png" />
+						<div id="photo" class="col-md-12">
+							<img width="120px;"src="<?php echo base_url();?>assets/images/default-profil.png" />
 						</div>
-						<div id="nickname">
-							Fajar Ainul
+						<div id="nickname" class="col-md-12">
+							<h5><?php echo $user['nama_depan'].' '.$user['nama_belakang'];?></h5>
 						</div>
-						<div id="profile_status">
-							text
+						<div id="profile_status" class="col-md-12">
+							<?php 
+								if(!empty($user['status'])){
+									echo $user['status'];
+								}else{
+									echo 'Hello World!';
+								}
+							?>
 						</div>
 					</div>
 					<div id="profile_data" class="col-md-12">
 						<div class="_data" class="col-md-12">
 							<span style="color:#BCA7A5;">Full Name</span><br>
-							<span>Mohammad Fajar Ainul Bashri</span>
+							<span><?php echo $user['nama_depan'].' '.$user['nama_belakang'];?></span>
 						</div>
 						<div class="_data" class="col-md-12">
-							<span style="color:#BCA7A5;">Place, Birthday</span><br>
-							<span>Semarang, 1 Juli 1902</span>
+							<span style="color:#BCA7A5;">Birthday</span><br>
+							<span><?php echo date('d F Y', strtotime($user['ttl']));?></span>
 						</div>
 						<div class="_data" class="col-md-12">
 							<span style="color:#BCA7A5;">Address</span><br>
-							<span>Tlogosari</span>
+							<span><?php if(isset($user['address'])){ echo $user['address'];}else{ echo '-';}?></span>
 						</div>
 						<div class="_data" class="col-md-12">
 							<span style="color:#BCA7A5;">Work On</span><br>
-							<span>DIGIT</span>
+							<span><?php if(isset($user['work'])){ echo $user['work'];}else{ echo '-';}?></span>
 						</div>
 					</div>
 					<div id="profile_event" class="col-md-12">
@@ -106,25 +112,28 @@
 					</div>
 					<div id="editor" class="col-md-12">
 						<div id="editor_title" class="col-md-12">
-							<div class="icon col-md-1"><img src="assets/images/profil.png" /></div>
-							<div id="editor_title_text" class="icon col-md-11">My Profile</div>
+							<div class="icon col-md-1"><img src="<?php echo base_url();?>assets/images/profil.png" /></div>
+							<div id="editor_title_text" class="icon col-md-11"><?php echo $user['nama_depan'].' '.$user['nama_belakang'];?></div>
 						</div>
+						<form method="post" action="<?php echo site_url('set_status');?>">
 						<div id="editor_content" class="col-md-12">
-							My Old Status...
+							
+							<textarea name="status" rows="5"></textarea>
 							<!--<textarea cols="98" rows="5" style="resize:none;"></textarea>-->
 						</div>
 						<div id="editor_action" class="col-md-12">
-							<div class="icon col-md-1"><img src="assets/images/upload-gambar.png" /></div>
-							<div class="icon col-md-1"><img src="assets/images/upload-video.png" /></div>
-							<div class="icon col-md-1"><img src="assets/images/edit-gambar.png" /></div>
-							<button class="btn btn-default pull-right">Send</button>
+							<div class="icon col-md-1"><img src="<?php echo base_url();?>assets/images/upload-gambar.png" /></div>
+							<div class="icon col-md-1"><img src="<?php echo base_url();?>assets/images/upload-video.png" /></div>
+							<div class="icon col-md-1"><img src="<?php echo base_url();?>assets/images/edit-gambar.png" /></div>
+							<button type="submit" class="btn btn-default pull-right">Send</button>
 						</div>
+						</form>
 					</div>
 					<div class="col-md-12 status">
 						<div id="status_title" class="col-md-12">
-							<div class="icon col-md-1"><img src="assets/images/profil.png" /></div>
+							<div class="icon col-md-1"><img src="<?php echo base_url();?>assets/images/profil.png" /></div>
 							<div id="status_title_text" class="icon col-md-10">Profile</div>
-							<div class="icon_dropdown col-md-1"><img src="assets/images/dropdown.png" /></div>
+							<div class="icon_dropdown col-md-1"><img src="<?php echo base_url();?>assets/images/dropdown.png" /></div>
 						</div>
 						<div id="status_content" class="col-md-12">
 							Somebody's Status
@@ -135,9 +144,9 @@
 					</div>
 					<div class="col-md-12 status">
 						<div id="status_title" class="col-md-12">
-							<div class="icon col-md-1"><img src="assets/images/profil.png" /></div>
+							<div class="icon col-md-1"><img src="<?php echo base_url();?>assets/images/profil.png" /></div>
 							<div id="status_title_text" class="icon col-md-10">Profile</div>
-							<div class="icon_dropdown col-md-1"><img src="assets/images/dropdown.png" /></div>
+							<div class="icon_dropdown col-md-1"><img src="<?php echo base_url();?>assets/images/dropdown.png" /></div>
 						</div>
 						<div id="status_content" class="col-md-12">
 							Somebody's Status
@@ -200,19 +209,19 @@
 					
 					<div id="people" class="col-md-12" style="padding:0px;">
 						<div class="col-md-12 list_people">
-							<div class="icon col-md-3"><img src="assets/images/profil.png" /></div>
+							<div class="icon col-md-3"><img src="<?php echo base_url();?>assets/images/profil.png" /></div>
 							<div id="status_title_text" class="icon col-md-9">Profile</div>
 						</div>
 						<div class="col-md-12 list_people">
-							<div class="icon col-md-3"><img src="assets/images/profil.png" /></div>
+							<div class="icon col-md-3"><img src="<?php echo base_url();?>assets/images/profil.png" /></div>
 							<div id="status_title_text" class="icon col-md-9">Profile</div>
 						</div>
 						<div class="col-md-12 list_people">
-							<div class="icon col-md-3"><img src="assets/images/profil.png" /></div>
+							<div class="icon col-md-3"><img src="<?php echo base_url();?>assets/images/profil.png" /></div>
 							<div id="status_title_text" class="icon col-md-9">Profile</div>
 						</div>
 						<div class="col-md-12 list_people">
-							<div class="icon col-md-3"><img src="assets/images/profil.png" /></div>
+							<div class="icon col-md-3"><img src="<?php echo base_url();?>assets/images/profil.png" /></div>
 							<div id="status_title_text" class="icon col-md-9">Profile</div>
 						</div>
 					</div>

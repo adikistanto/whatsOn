@@ -54,3 +54,9 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['daftar'] = 'whatsOn/daftar';
+
+$route['daftar'] = 'c_signup/create';
+$route['login']  = 'c_auth/login';
+
+$route['profile'] = 'c_user/index';
+$route['set_status'] = 'c_user/set_status';
