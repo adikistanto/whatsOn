@@ -1,0 +1,160 @@
+.btn{background-color: transparent;}
+/* LAYOUT */
+.navbar-inverse.navbar-static-top{
+	background-color: #d91d0c;
+	border-color: #d91d0c;
+	margin-bottom: 0px;
+}
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+.nav.navbar-nav a{
+	font-size: 16px;
+}
+.navbar-nav a.text{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.nav.navbar-nav img{
+	width: 28px;
+	height: 28px;
+}
+.navbar-nav form button{
+	margin-left: -36px;
+	background-color: white;
+}
+.glyphicon.glyphicon-cog{
+	font-size: 28px;
+}
+/* HOME */
+.well{
+	background-color: white;
+	border-color: #999999;
+}
+.sidebar{
+	background-color: #fde1df;
+}
+.sidebar a{
+	color: black;
+}
+h4{
+	color: #d91d0c;
+	
+	margin-bottom: 0px;
+}
+.sidebar h4{
+	margin-top: 20px;
+	text-align: center;
+}
+.sidebar hr{
+	margin-top: 0px;
+}
+.status-profil img{
+	width: 26px;
+	height: 26px;
+}
+.btn.btn-default{
+	background-color: #d91d0c;
+	color: white;
+}
+.btn.btn-default:hover{
+	background-color: #fde1df;
+	color: black;
+}
+.btn.btn-default:hover span{
+	border-color: black;
+}
+.status-profil hr{
+	border-color: #999999;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.glyphicon.glyphicon-plus{
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 1px;
+    margin-right: 5px;
+}
+.my.status-profil form{
+	margin-right: -20px;
+	margin-left: -20px;
+}
+.my.status-profil textarea{
+	max-width: 100%;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.my.status-profil form button[type=submit]{
+	margin-right: 20px;
+}
+.status-profil a.status-attr{
+	color: #d91d0c;
+}
+.status-profil .badge{
+	background-color: #d91d0c;
+	color: white;
+}
+.status-profil .status-attr{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.status-profil .input-group{
+	margin-top: 20px;
+}
+.status-profil .input-group .input-group-addon{
+	background-color: white;
+}
+.status-profil .status-attr img{
+	width: 20px;
+	height: 20px;
+}
+.new.status-profil .well{
+	border-color: #aade87;
+}
+.new.status-profil h4{
+	margin-bottom: 20px;
+}
+.sidebar-offcanvas{
+	border-left: 1px solid #999999;
+	background-color: #fde1df;
+}
+.side .well{
+	padding:0px;
+}
+.side p.title{
+	color: #d91d0c;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.side .well-header{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.side .well-content{
+	padding-left: 5px;
+	padding-right: 5px;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+}
+.side .well-footer{
+	padding-left: 5px;
+	padding-right: 5px;
+	min-height: 25px;
+}
+.side .friends img{
+	width: 32px;
+	height: 32px;
+}
+.sidebar-offcanvas .well{
+	margin-top: 10px;
+	margin-left: -15px;
+	margin-right: -15px;
+	border-radius: 0px;
+	border-left: none;
+	border-right: none;
+}
