@@ -18,7 +18,7 @@
         <div id="sign-up">
             <div id="login_box">
                 <div id="login_box_title"><h3>Daftar</h3></div>
-                <form action="" method="POST">
+                <form action="<?php echo site_url('daftar');?>" method="POST">
                     <input id="nama_depan" class="form-control" type="text" name="nama_depan" placeholder="Nama depan" autofocus autocomplete required/>
                     <input id="nama_belakang" class="form-control" type="text" name="nama_belakang" placeholder="Nama belakang" autocomplete required/>
                     <br><br>
@@ -38,20 +38,20 @@
                             }
                         ?>
                     </select>
-                    <select id="bulan_lahir" class="form-control" name="tanggal_lahir" required >
+                    <select id="bulan_lahir" class="form-control" name="bulan_lahir" required >
                         <option value="">Bulan</option>
-                        <option value="Januari">Januari</option>
-                        <option value="Februari">Februari</option>
-                        <option value="Maret">Maret</option>
-                        <option value="April">April</option>
-                        <option value="Mei">Mei</option>
-                        <option value="Juni">Juni</option>
-                        <option value="Juli">Juli</option>
-                        <option value="Agustus">Agustus</option>
-                        <option value="September">September</option>
-                        <option value="Oktober">Oktober</option>
-                        <option value="November">November</option>
-                        <option value="Desember">Desember</option>
+                        <option value="1">Januari</option>
+                        <option value="2">Februari</option>
+                        <option value="3">Maret</option>
+                        <option value="4">April</option>
+                        <option value="5">Mei</option>
+                        <option value="6">Juni</option>
+                        <option value="7">Juli</option>
+                        <option value="8">Agustus</option>
+                        <option value="9">September</option>
+                        <option value="10">Oktober</option>
+                        <option value="11">November</option>
+                        <option value="12">Desember</option>
                     </select>
                     <select id="tahun_lahir" class="form-control" name="tahun_lahir" required>
                         <option value="">Tahun</option>
@@ -69,7 +69,7 @@
                     <label for="gender">Jenis kelamin</label>
                     <br>
                     <select id="gender" class="form-control" name="gender" required >
-                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Laki-laki" selected>Laki-laki</option>
                         <option value="Perempuan">Perempuan</option>
                     </select>
                     <br>
