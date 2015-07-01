@@ -74,7 +74,7 @@
                     </select>
                     <br>
                     <input id="sign-up-btn" class="ok-btn btn" type="submit" name="sign-up-btn" value="Daftar" />
-                    <a href="<?php echo site_url('whatsOn') ?>"><input class="no-btn btn btn-default" type="button" value="Cancel" />
+                    <a href="<?php echo site_url('whatsOn') ?>"><input class="no-btn btn btn-default" type="button" value="Kembali" />
                 </form>
             </div>
         </div>
