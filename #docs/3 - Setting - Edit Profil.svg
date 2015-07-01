@@ -27,7 +27,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.54"
-     inkscape:cx="576.12157"
+     inkscape:cx="719.69949"
      inkscape:cy="270.56084"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -60,7 +60,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1371,6 +1371,103 @@
          x="287.0304"
          y="425.30142"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.5px;font-family:Gadugi;-inkscape-font-specification:'Gadugi Bold';fill:#000000;fill-opacity:1">Edit Profil</tspan></text>
+    <rect
+       style="opacity:1;fill:#f9f9f9;fill-opacity:1;fill-rule:evenodd;stroke:#999999;stroke-width:0.35068229;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4552-2-6-0"
+       width="208.96233"
+       height="280.89346"
+       x="1014.6298"
+       y="377.80438" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#f9f9f9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4959"
+       sodipodi:sides="3"
+       sodipodi:cx="1157.4073"
+       sodipodi:cy="369.02887"
+       sodipodi:r1="60.660515"
+       sodipodi:r2="13.671132"
+       sodipodi:arg1="0.54565506"
+       sodipodi:arg2="1.5928526"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 1209.2592,400.51035 -105.0415,-2.3172 54.5275,-89.81004 z"
+       inkscape:transform-center-x="-0.16954163"
+       inkscape:transform-center-y="-1.3484968"
+       transform="matrix(0.41821957,0,0,0.20805353,681.89371,296.22291)" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text6282-8-5"
+       y="417.1684"
+       x="1044.9386"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Gadugi;-inkscape-font-specification:Gadugi;fill:#000000"
+         y="417.1684"
+         x="1044.9386"
+         id="tspan6284-0-1"
+         sodipodi:role="line">Edit Profil</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6282-8-2"
+       y="542.80273"
+       x="1044.9386"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Gadugi;-inkscape-font-specification:Gadugi;fill:#000000"
+         y="542.80273"
+         x="1044.9386"
+         id="tspan6284-0-3"
+         sodipodi:role="line">Bantuan</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6282-8-7"
+       y="456.51318"
+       x="1044.9386"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Gadugi;-inkscape-font-specification:Gadugi;fill:#000000"
+         y="456.51318"
+         x="1044.9386"
+         id="tspan6284-0-0"
+         sodipodi:role="line">Pengaturan</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6282-8-2-0"
+       y="585.89343"
+       x="1046.5597"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Gadugi;-inkscape-font-specification:Gadugi;fill:#000000"
+         y="585.89343"
+         x="1046.5597"
+         id="tspan6284-0-3-2"
+         sodipodi:role="line">Akun premium</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6282-8-2-07"
+       y="632.87665"
+       x="1044.9386"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Gadugi;-inkscape-font-specification:Gadugi;fill:#000000"
+         y="632.87665"
+         x="1044.9386"
+         id="tspan6284-0-3-4"
+         sodipodi:role="line">Buat iklan</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1046.6124"
+       y="500.43759"
+       id="text6282-8-2-0-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6284-0-3-2-1"
+         x="1046.6124"
+         y="500.43759"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Gadugi;-inkscape-font-specification:Gadugi;fill:#000000">Keluar</tspan></text>
   </g>
   <g
      id="g5590"
