@@ -53,3 +53,4 @@ $route['default_controller'] = 'whatsOn';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['daftar'] = 'whatsOn/daftar';

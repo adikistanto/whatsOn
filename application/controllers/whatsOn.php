@@ -6,5 +6,8 @@ class whatsOn extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
-     
+    public function daftar()
+	{
+		$this->load->view('daftar');
+	}
 }

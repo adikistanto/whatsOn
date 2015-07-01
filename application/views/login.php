@@ -13,18 +13,19 @@
         <header>
             <span id="welcome">Selamat datang di What's On</span>
         </header>
-        
+
+        <!-- Id Halaman -->        
         <div id="login">
             <div id="login_box">
                 <div id="login_box_title"><h3>Login</h3></div>
                 <form action="" method="POST">
-                    <input id="identitas" class="form-control" type="email" name="identitas" placeholder="Masukkan email" autofocus autocomplete />
+                    <input id="identitas" class="form-control" type="email" name="identitas" placeholder="Masukkan email" autofocus autocomplete required/>
                     <br>
-                    <input id="kunci_rahasia" class="form-control" type="password" name="kunci_rahasia" placeholder="Masukkan kata sandi" />
+                    <input id="kunci_rahasia" class="form-control" type="password" name="kunci_rahasia" placeholder="Masukkan kata sandi" required/>
                     <a href="">Lupa password?</a>
                     <br>
-                    <input id="login-btn" class="btn btn-default" type="submit" name="login-btn" value="Masuk" />
-                    <input id="sign-up-btn" class="btn btn-default" type="button" name="sign-up-btn" value="Daftar" />
+                    <input id="login-btn" class="ok-btn btn" type="submit" name="login-btn" value="Masuk" />
+                    <a href="<?php echo site_url('daftar') ?>"><input id="sign-up-btn" class="no-btn btn btn-default" type="button" value="Daftar" />
                 </form>
             </div>
         </div>

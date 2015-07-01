@@ -16,17 +16,20 @@ header{
     top: 25px;
     left: 100px;
 }
+.form-control{
+    max-width: 243px;
+}
 #login_box{
     width: 285px;
     height: 240px;
+    position: relative;
+    top: 130px;
     padding-right: 20px;
     padding-left: 20px;
     background-color: #FEFEFE;
     border-radius: 5px;
     border: 1px solid #fde1df;
     box-shadow: 2px 2px 3px #fde1df;
-    position: relative;
-    top: 100px;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -53,18 +56,8 @@ header{
     color: #d91d0c;
     text-decoration: none;
 }
-#login-btn{
-    width: 73px;
-    height: 32px;
-    padding-top: 4px;
-    padding-bottom: 7px;
-    margin-top: 20px;
-    background-color: #d91d0c;
-    border: none;
-    color: #fff;
-    float: right;
-}
-#sign-up-btn{
+#login .btn,
+#sign-up .btn{
     width: 73px;
     height: 32px;
     padding-top: 4px;
@@ -73,7 +66,38 @@ header{
     margin-right: 7px;
     float: right;
 }
-#sign-up-btn:hover{
+.ok-btn{
+    margin-top: 20px;
+    background-color: #d91d0c;
+    border: none;
+    color: #fff;
+}
+.ok-btn:hover{
+    color: #fff;
+}
+.no-btn:hover{
     background-color: #F2F2F2;
 }
+
+/*** SIGN UP ***/
+#sign-up #login_box{
+    width: 405px;
+    height: 485px;
+    top: 15px;
+}
+#nama_depan, #nama_belakang{
+    width: 170px;
+    display: inline-block;
+}
+#nama_depan{
+    margin-right: 19px;
+}
+#login_box select{
+    max-width: 100px;
+    display: inline-block;
+}
+#sign-up label{
+    color: #5F5F5F;
+}
+
 
