@@ -1,0 +1,79 @@
+body{
+    background-color: #fafafa;
+    font-family: Gadugi;
+}
+/*** LOGIN ***/
+header{
+    height: 80px;
+    background-color: #d91d0c;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-family: 'Gafata';
+    font-size: 20px;
+}
+#welcome{
+    position: relative;
+    top: 25px;
+    left: 100px;
+}
+#login_box{
+    width: 300px;
+    height: 240px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #FEFEFE;
+    border-radius: 5px;
+    border: 1px solid #fde1df;
+    box-shadow: 2px 2px 3px #fde1df;
+    position: relative;
+    top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+#login_box_title{
+    margin-bottom: 27px;
+}
+#login_box_title h3{
+    margin-top: 12px;
+    color: #5F5F5F;
+}
+.form-control:focus{
+    border-color: #F2A5A0;
+    box-shadow: 0px 0px 3px #fde1df;
+}
+#login form a{
+    position: relative;
+    top: 3px;
+    left: 1px;
+    color: #5F5F5F;
+    font-size: 13px;
+}
+#login form a:hover{
+    color: #d91d0c;
+    text-decoration: none;
+}
+#login-btn{
+    width: 73px;
+    height: 32px;
+    padding-top: 4px;
+    padding-bottom: 7px;
+    margin-top: 13px;
+    background-color: #d91d0c;
+    border: none;
+    color: #fff;
+    float: right;
+}
+#sign-up-btn{
+    width: 73px;
+    height: 32px;
+    padding-top: 4px;
+    padding-bottom: 7px;
+    margin-top: 13px;
+    margin-right: 7px;
+    float: right;
+}
+#sign-up-btn:hover{
+    background-color: #F2F2F2;
+}
+
