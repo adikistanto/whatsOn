@@ -1,5 +1,5 @@
 body{
-    background-color: #fafafa;
+    background-color: #f0f0f0;
     font-family: Gadugi;
 }
 /*** LOGIN ***/
@@ -17,7 +17,7 @@ header{
     left: 100px;
 }
 #login_box{
-    width: 300px;
+    width: 285px;
     height: 240px;
     padding-right: 20px;
     padding-left: 20px;
@@ -32,7 +32,7 @@ header{
     display: block;
 }
 #login_box_title{
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 }
 #login_box_title h3{
     margin-top: 12px;
@@ -58,7 +58,7 @@ header{
     height: 32px;
     padding-top: 4px;
     padding-bottom: 7px;
-    margin-top: 13px;
+    margin-top: 20px;
     background-color: #d91d0c;
     border: none;
     color: #fff;
@@ -69,7 +69,7 @@ header{
     height: 32px;
     padding-top: 4px;
     padding-bottom: 7px;
-    margin-top: 13px;
+    margin-top: 20px;
     margin-right: 7px;
     float: right;
 }
