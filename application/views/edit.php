@@ -29,7 +29,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<title>Jumbotron Template for Bootstrap</title>
+		<title>WhatsOn</title>
 	</head>
 
 	<body>
@@ -47,7 +47,7 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav"> <!--navbar-right-->
-						<li><a class="text" href="">HOME</a></li>
+						<li><a class="text" href="<?php echo site_url('beranda');?>">HOME</a></li>
 						<li>
 							<a href=""><img src="<?php echo base_url();?>assets/images/pemberitahuan.png" alt=""></a>
 						</li>
@@ -70,7 +70,7 @@
 						</form>
 						</li>
 						<li>
-							<a href=""><img src="<?php echo base_url();?>assets/images/profil.png" alt=""></a>
+							<a href="<?php echo site_url('profile');?>"><img src="<?php echo base_url();?>assets/images/profil.png" alt=""></a>
 						</li>
 						<li>
 							<a href=""><span class="glyphicon glyphicon-cog"></span></a>

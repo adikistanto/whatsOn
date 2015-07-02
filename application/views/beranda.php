@@ -28,7 +28,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <title>Jumbotron Template for Bootstrap</title>
+        <title>WhatsOn</title>
     </head>
 
     <body>
@@ -69,7 +69,7 @@
                             </form>
                         </li>
                         <li>
-                            <a href=""><img src="<?php echo base_url()?>assets/images/profil.png" alt=""></a>
+                            <a href="<?php echo site_url('profile');?>"><img src="<?php echo base_url()?>assets/images/profil.png" alt=""></a>
                         </li>
                         <li>
                             <a href=""><span class="glyphicon glyphicon-cog"></span></a>
@@ -99,7 +99,7 @@
                                     <div class="well">
                                         <h4>
                                             <img src="<?php echo base_url()?>assets/images/profil.png" >
-                                            My Profile
+                                            <?php echo $user['nama_depan'].' '.$user['nama_belakang'];?>
                                             <button type="button" class="btn btn-default" style="float:right"><span class="glyphicon glyphicon-plus"></span>Tambah Event</button>
                                         </h4>
                                         <form action="" method="post" accept-charset="utf-8">
