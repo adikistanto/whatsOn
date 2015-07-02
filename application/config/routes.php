@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['daftar'] = 'whatsOn/daftar';
 $route['beranda'] = 'whatsOn/beranda';
+$route['teman'] = 'whatsOn/teman';
 
 $route['daftar'] = 'c_signup/create';
 $route['login']  = 'c_auth/login';
