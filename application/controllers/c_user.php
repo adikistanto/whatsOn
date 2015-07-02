@@ -4,6 +4,9 @@ class C_User extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		if(!$this->session->userdata('id_user')){
+			redirect('login');
+		}
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->load->model('M_User');
