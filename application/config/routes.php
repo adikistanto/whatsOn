@@ -60,4 +60,6 @@ $route['daftar'] = 'c_signup/create';
 $route['login']  = 'c_auth/login';
 
 $route['profile'] = 'c_user/index';
-$route['s_status'] = 'c_user/set_status';
+$route['profile/edit'] = 'c_user/edit';
+$route['set_status'] = 'c_user/set_status';
+

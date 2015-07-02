@@ -1,9 +1,9 @@
 .btn{background-color: transparent;}
 /* LAYOUT */
-.navbar-inverse.navbar-static-top{
+.navbar-inverse.navbar-fixed-top{
 	background-color: #d91d0c;
 	border-color: #d91d0c;
-	margin-bottom: 0px;
+	margin-bottom: 50px;
 }
 .navbar-inverse .navbar-nav>li>a{
 	color: white;
@@ -27,11 +27,23 @@
 	font-size: 28px;
 }
 /* HOME */
+.container-fluid{
+	position: relative;
+	top: 63px;
+}
+.side{
+	height: 100%;
+	position: fixed;
+	top: 63px;
+}
 .well{
 	background-color: white;
 	border-color: #999999;
 }
 .sidebar{
+	height: 100%;
+	position: fixed;
+	top: 63px;
 	background-color: #fde1df;
 }
 .sidebar a{
@@ -125,21 +137,27 @@ h4{
 }
 .side .well{
 	padding:0px;
+	border-radius: 0px;
 }
 .side p.title{
 	color: #d91d0c;
 	margin-bottom: 0px;
-	margin-top: 10px;
 }
 .side .well-header{
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 5px;
+}
+.side .well-header h4{
+	margin-top: 0px;
+}
+.well h4{
+	margin-top: 0px;
 }
 .side .well-content{
 	padding-left: 5px;
 	padding-right: 5px;
 	border-top: 1px solid #999999;
 	border-bottom: 1px solid #999999;
+	min-height: 100px;
 }
 .side .well-footer{
 	padding-left: 5px;

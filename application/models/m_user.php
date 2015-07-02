@@ -53,30 +53,34 @@ class M_User extends CI_Model {
 			echo 'oke';
 		}
 	}
+	*/
 	
 	public function edit_user($id)
 	{	
+		$tgl = $this->input->post('tanggal_lahir');
+		$bln = $this->input->post('bulan_lahir');
+		$thn = $this->input->post('tahun_lahir');
+		
+		$date = $thn.'-'.$bln.'-'.$tgl;
+		
+		$id=$this->session->userdata('id_user');
+		
 		$data = array(
-				'username' 	=> $this->input->post('username'),
-				'email'		=> $this->input->post('email'),
-				'password'=> $this->input->post('password'),
-				'level'=> $this->input->post('level')		
+				'nama_depan' 	=> $this->input->post('nama_depan'),
+				'nama_belakang'		=> $this->input->post('nama_belakang'),
+				'email'=> $this->input->post('email'),
+				'sandi'=> $this->input->post('kunci_rahasia'),
+				'kelamin'=> $this->input->post('gender'),
+				'kota'=> $this->input->post('kota'),
+				'status_premium'=> 0,
+				'ttl'=> $date,
 		);
 		
 		$this->db->where('id_user', $id);
-		$this->db->update('user_account', $data); 
-		
-		if($this->input->post('level') ==	1	){
-			$data2 = array(
-				'id_tingkat' => $this->input->post('tingkat'),
-				'id_fakultas' => $this->input->post('fakultas'),		
-			);
-			
-			$this->db->where('id_eo', $id);
-			$this->db->update('profil_eo', $data2); 
-		}
-		
+		$this->db->update('user', $data); 
+
 	}
+	/*
 	
 	public function record_count($filter=false)
 	{
