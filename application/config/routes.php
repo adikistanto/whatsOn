@@ -54,6 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['daftar'] = 'whatsOn/daftar';
+$route['beranda'] = 'whatsOn/beranda';
 
 $route['daftar'] = 'c_signup/create';
 $route['login']  = 'c_auth/login';
@@ -61,3 +62,4 @@ $route['login']  = 'c_auth/login';
 $route['profile'] = 'c_user/index';
 $route['profile/edit'] = 'c_user/edit';
 $route['set_status'] = 'c_user/set_status';
+
