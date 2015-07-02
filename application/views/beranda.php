@@ -79,7 +79,7 @@
                             </form>
                         </li>
                         <li>
-                            <a href=""><img src="<?php echo base_url()?>assets/images/profil.png" alt=""></a>
+                            <a href="<?php echo site_url('profile');?>"><img src="<?php echo base_url()?>assets/images/profil.png" alt=""></a>
                         </li>
                         <li>
                             <a href=""><span class="glyphicon glyphicon-cog"></span></a>

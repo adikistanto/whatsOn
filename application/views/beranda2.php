@@ -28,12 +28,12 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <title>Jumbotron Template for Bootstrap</title>
+        <title>WhatsOn</title>
     </head>
 
     <body>
 
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -46,7 +46,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav"> <!--navbar-right-->
-                        <li><a class="text" href="">HOME</a></li>
+                        <li><a class="text" href="<?php echo site_url('beranda');?>">HOME</a></li>
                         <li>
                             <a href=""><img src="<?php echo base_url()?>assets/images/pemberitahuan.png" alt=""></a>
                         </li>
@@ -69,7 +69,7 @@
                             </form>
                         </li>
                         <li>
-                            <a href=""><img src="<?php echo base_url()?>assets/images/profil.png" alt=""></a>
+                            <a href="<?php echo site_url('profile');?>"><img src="<?php echo base_url()?>assets/images/profil.png" alt=""></a>
                         </li>
                         <li>
                             <a href=""><span class="glyphicon glyphicon-cog"></span></a>
@@ -99,7 +99,7 @@
                                     <div class="well">
                                         <h4>
                                             <img src="<?php echo base_url()?>assets/images/profil.png" >
-                                            My Profile
+                                            <?php echo $user['nama_depan'].' '.$user['nama_belakang'];?>
                                             <button type="button" class="btn btn-default" style="float:right"><span class="glyphicon glyphicon-plus"></span>Tambah Event</button>
                                         </h4>
                                         <form action="" method="post" accept-charset="utf-8">

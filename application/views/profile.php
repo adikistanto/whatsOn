@@ -25,13 +25,13 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+								<li class="active"><a href="<?php echo site_url('beranda');?>">Home <span class="sr-only">(current)</span></a></li>
 								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/pemberitahuan.png" /></div></a></li>
 								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/pesan.png" /></div></a></li>
 								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/teman.png" /></div></a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/default-profil.png" /></div></a></li>
+								<li><a href="<?php echo site_url('profile');?>"><div class="icon"><img src="<?php echo base_url();?>assets/images/default-profil.png" /></div></a></li>
 								<li><a href="#"><div class="icon"><img src="<?php echo base_url();?>assets/images/pengaturan.png" /></div></a></li>
 							</ul>
 							<form class="navbar-form navbar-right" role="search">
@@ -119,7 +119,7 @@
 						<div id="editor_content" class="col-md-12">
 							
 							<!--<textarea name="status" rows="5"></textarea>-->
-							<textarea cols="97" rows="5" style="resize:none;"></textarea>
+							<textarea cols="97" rows="5" name="status" style="resize:none;"></textarea>
 						</div>
 						<div id="editor_action" class="col-md-12">
 							<div class="icon col-md-1"><img src="<?php echo base_url();?>assets/images/upload-gambar.png" /></div>

@@ -33,7 +33,7 @@ class C_Auth extends CI_Controller {
 				);
 				
 				$this->session->set_userdata($sess_array);
-				redirect('profile');
+				redirect('beranda');
 			}else{
 				$data['error'] = 'Gagal Login, username/password tidak terdaftar';
 				$this->load->view('login',$data);
