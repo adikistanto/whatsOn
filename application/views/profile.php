@@ -75,7 +75,7 @@
 						</div>
 						<div class="_data" class="col-md-12">
 							<span style="color:#BCA7A5;">Address</span><br>
-							<span><?php if(isset($user['address'])){ echo $user['address'];}else{ echo '-';}?></span>
+							<span><?php if(isset($user['kota'])){ echo $user['kota'];}else{ echo '-';}?></span>
 						</div>
 						<div class="_data" class="col-md-12">
 							<span style="color:#BCA7A5;">Work On</span><br>
@@ -118,8 +118,8 @@
 						<form method="post" action="<?php echo site_url('set_status');?>">
 						<div id="editor_content" class="col-md-12">
 							
-							<textarea name="status" rows="5"></textarea>
-							<!--<textarea cols="98" rows="5" style="resize:none;"></textarea>-->
+							<!--<textarea name="status" rows="5"></textarea>-->
+							<textarea cols="97" rows="5" style="resize:none;"></textarea>
 						</div>
 						<div id="editor_action" class="col-md-12">
 							<div class="icon col-md-1"><img src="<?php echo base_url();?>assets/images/upload-gambar.png" /></div>

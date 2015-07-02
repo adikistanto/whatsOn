@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="/favicon.ico">
+
+		
+
+		<!-- Bootstrap core CSS -->
+		<link href="<?php echo base_url();?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="jumbotron.css" rel="stylesheet">
+
+		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<title>Jumbotron Template for Bootstrap</title>
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">LOGO</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav"> <!--navbar-right-->
+						<li><a class="text" href="">HOME</a></li>
+						<li>
+							<a href=""><img src="<?php echo base_url();?>assets/images/pemberitahuan.png" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?php echo base_url();?>assets/images/pesan.png" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?php echo base_url();?>assets/images/teman.png" alt=""></a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right"> <!--navbar-right-->
+						<li>
+						<form action="" method="get" class="navbar-form navbar-right">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search...">
+								<button type="submit" class="btn">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</div>
+						</form>
+						</li>
+						<li>
+							<a href=""><img src="<?php echo base_url();?>assets/images/profil.png" alt=""></a>
+						</li>
+						<li>
+							<a href=""><span class="glyphicon glyphicon-cog"></span></a>
+						</li>
+					</ul>
+				</div><!--/.navbar-collapse -->
+			</div>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2 sidebar">
+					<ul class="nav nav-sidebar">
+					<li id=""><a href="">Profil</a></li>
+										<li id=""><a href="">Privasi</a></li>
+										<li id=""><a href="">Pemberitahuan</a></li>
+								</ul>
+				</div>
+				<div class="col-sm-10 main">
+					<div class="row">
+						<div class="col-xs-12 col-sm-9">
+							<div class="col-xs-12 col-sm-12">
+								<h2>Edit</h2>
+								<div class="col-md-12">
+									<form class="form-horizontal" method="post" action="<?php echo site_url('profile/edit');?>">
+										<div class="form-group">
+											<label for="nama_depan" class="col-sm-3 control-label">Nama Depan</label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control" id="nama_depan" name="nama_depan" placeholder="Nama Depan" value="<?php echo $user['nama_depan'];?>">
+											</div>
+											<?php echo form_error('nama_depan'); ?>
+										</div>
+										<div class="form-group">
+											<label for="nama_belakang" class="col-sm-3 control-label">Nama Belakang</label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control" id="nama_belakang" name="nama_belakang" placeholder="Nama Belakang" value="<?php echo $user['nama_belakang'];?>">
+											</div>
+											<?php echo form_error('nama_belakang'); ?>
+										</div>
+										<div class="form-group">
+											<label for="kota" class="col-sm-3 control-label">Kota</label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control" id="kota" name="kota" placeholder="Kota" value="<?php echo $user['kota'];?>">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="email" class="col-sm-3 control-label">Email</label>
+											<div class="col-sm-8">
+												<input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo $user['email'];?>">
+											</div>
+											<?php echo form_error('email'); ?>
+										</div>
+										<div class="form-group">
+											<label for="password" class="col-sm-3 control-label">Password</label>
+											<div class="col-sm-8">
+												<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+											</div>
+											<?php echo form_error('password'); ?>
+										</div>
+										<div class="form-group">
+											<label for="re_password" class="col-sm-3 control-label">Konfirmasi Password</label>
+											<div class="col-sm-8">
+												<input type="password" class="form-control" id="re_password" name="re_password" placeholder="Confirmation Password">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="tgl_lahir" class="col-sm-3 control-label">Tanggal Lahir</label>
+											<div class="col-sm-2">
+												<select id="tanggal_lahir" class="form-control" name="tanggal_lahir" required >
+													<option value="">Tanggal</option>
+													<?php
+															for($i=1; $i<=31; $i++){
+																	echo '<option value='. $i .'>'. $i .'</option>';
+															}
+													?>
+												</select>
+											</div>
+											<div class="col-sm-2">
+												<select id="bulan_lahir" class="form-control" name="bulan_lahir" required >
+														<option value="">Bulan</option>
+														<option value="1">Januari</option>
+														<option value="2">Februari</option>
+														<option value="3">Maret</option>
+														<option value="4">April</option>
+														<option value="5">Mei</option>
+														<option value="6">Juni</option>
+														<option value="7">Juli</option>
+														<option value="8">Agustus</option>
+														<option value="9">September</option>
+														<option value="10">Oktober</option>
+														<option value="11">November</option>
+														<option value="12">Desember</option>
+												</select>
+											</div>
+											<div class="col-sm-2">
+												<select id="tahun_lahir" class="form-control" name="tahun_lahir" required>
+														<option value="">Tahun</option>
+														<?php
+																$tahun_ini = new DateTime('Y');
+																$tahun_lahir = $tahun_ini->sub(new DateInterval('P18Y'));
+																for($i=1; $i<=70; $i++){
+																		echo '<option value='. $tahun_lahir->format('Y') .'>'. $tahun_lahir->format('Y') .'</option>';
+																		/*mengurangi tahun*/
+																		$tahun_lahir->sub(new DateInterval('P1Y'));
+																}
+														?>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="gender" class="col-sm-3 control-label">Jenis Kelamin</label>
+											<div class="col-sm-2">
+												<select id="gender" class="form-control" name="gender" required >
+														<?php
+															if($user['kelamin']=='L'){
+																
+															}
+														?>
+													<option value="Laki-laki" <?php if($user['kelamin']=='L'){echo 'selected';}?>>Laki-laki</option>
+														<option value="Perempuan" <?php if($user['kelamin']=='P'){echo 'selected';}?>>Perempuan</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-9">
+												<button type="submit" class="btn btn-default pull-right">Save</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-xs-6 col-sm-3 sidebar-offcanvas side" id="sidebar">
+							<div class="well">
+								<div class="well-header">
+									<h4><strong>Iklan</strong></h4>
+								</div>
+								<div class="well-content">
+									<p>No record found</p>
+								</div>
+								<div class="well-footer">
+
+								</div>
+							</div>
+							<div class="well">
+								<div class="well-header">
+									<h4><strong>Iklan</strong></h4>
+								</div>
+								<div class="well-content">
+									<p>No record found</p>
+								</div>
+								<div class="well-footer">
+
+								</div>
+							</div>
+							<hr style="border-color:red">
+							<div class="friends">
+								<img src="assets/images/profil.png" alt="">
+								Somebody 1
+							</div>
+							<div class="friends">
+								<img src="assets/images/profil.png" alt="">
+								Somebody 2
+							</div>
+							<div class="friends">
+								<img src="assets/images/profil.png" alt="">
+								Somebody 3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="<?php echo base_url();?>assets/bootstrap/js/jquery-1.11.2.min.js"></script>
+		<script src="<?php echo base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+	</body>
+</html>

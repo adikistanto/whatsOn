@@ -26,43 +26,28 @@ class C_User extends CI_Controller {
 		}
 		
 	}
-	/*
-	public function edit($id){
-		$data['data_edit'] = $this->M_Category->get_category($id);
-		$data_category = $data['data_edit'];
+	
+	public function edit(){
+		$data['user'] = $this->M_User->get_user();
 		
-		$category_name = $data_category['category_name'];
-		$slug = $data_category['slug'];
+		$this->form_validation->set_rules('nama_depan', 'Nama Depan', 'trim|required|max_length[100]');
+		$this->form_validation->set_rules('nama_belakang', 'Nama Belakang', 'trim|required|max_length[100]');
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|max_length[100]');
+		$this->form_validation->set_rules('kota', 'Kota', 'trim|required|max_length[50]');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[8]|max_length[20]|matches[re_password]|md5');
+		$this->form_validation->set_rules('re_password', 'Comfirmation Password', 'trim|required');
 		
-		//echo $category_name.$slug;return;
-		//set rules
-		if ($category_name != $this->input->post('category_name')){
-			$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required|max_length[100]|is_unique[category.category_name]');			
-			$validasi = $this->form_validation->run();
-		}else{
-			$validasi = TRUE;
-		}
-		
-		if($slug != $this->input->post('slug')){
-			$this->form_validation->set_rules('slug', 'Slug', 'trim|required|max_length[100]|is_unique[category.slug]');
-			$validasi = $this->form_validation->run();
-		}else{
-			$validasi = TRUE;
-		}
-		
-		if ($validasi === FALSE)
+		if ($this->form_validation->run() === FALSE)
 		{
-			$data['categories'] = $this->M_Category->get_category();
-			$this->load->template_admin('admin/view_categories',$data);
+			$this->load->view('edit',$data);
 		}
 		else
 		{
-			$this->M_Category->edit_category($id);
-			$this->session->set_flashdata('message', 'Category berhasil diedit');
-			redirect('admin/categories');
+			$this->M_User->edit_user();
+			redirect('profile');
 		}
 	}
-	
+	/*
 	public function delete()
 	{	
 		$this->session->set_flashdata('message', 'Category berhasil dihapus...');
