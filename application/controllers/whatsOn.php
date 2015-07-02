@@ -21,7 +21,7 @@ class whatsOn extends CI_Controller {
 
     public function beranda() {
 				$data['user'] = $this->M_User->get_user();
-        $this->load->view('beranda',$data);
+        $this->load->view('beranda2',$data);
     }
 
     public function profile() {
