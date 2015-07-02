@@ -113,7 +113,7 @@
                                         <h4>
                                             <img src="<?php echo base_url()?>assets/images/profil.png" >
                                             My Profile
-                                            
+                                            <?php echo $user['nama_depan'].' '.$user['nama_belakang'];?>
                                             <button type="button" data-title='Add Event' data-toggle='modal' data-target='#add_event' class="btn btn-default" style="float:right"><span class="glyphicon glyphicon-plus"></span>Tambah Event</button>
                                         </h4>
                                         <form action="" method="post" accept-charset="utf-8">
