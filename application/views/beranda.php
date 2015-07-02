@@ -28,7 +28,17 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <title>Jumbotron Template for Bootstrap</title>
+        <script>
+        $(document).ready(function(){
+					
+			$("#add_event").on('show.bs.modal', function(event){
+				var button = $(event.relatedTarget);  // Button that triggered the modal
+				var titleData = button.data('title');$(this).find('.modal-title').text(titleData);
+			});
+                    });
+        </script>
+        
+        <title>WhatsOn</title>
     </head>
 
     <body>
@@ -78,7 +88,10 @@
                 </div><!--/.navbar-collapse -->
             </div>
         </nav>
-
+        
+        
+        
+        
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2 sidebar">
@@ -100,7 +113,8 @@
                                         <h4>
                                             <img src="<?php echo base_url()?>assets/images/profil.png" >
                                             My Profile
-                                            <button type="button" class="btn btn-default" style="float:right"><span class="glyphicon glyphicon-plus"></span>Tambah Event</button>
+                                            
+                                            <button type="button" data-title='Add Event' data-toggle='modal' data-target='#add_event' class="btn btn-default" style="float:right"><span class="glyphicon glyphicon-plus"></span>Tambah Event</button>
                                         </h4>
                                         <form action="" method="post" accept-charset="utf-8">
                                             <textarea name="status" rows="5"></textarea>
@@ -227,12 +241,48 @@
             </div>
         </div>
 
-
+        <div class="modals">
+             <!-- add event -->
+            <div id="add_event" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <form class="form-horizontal" method="POST" action="">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Add Event</h4>
+                        </div>
+                        <div class="modal-body">
+                                <div class="form-group"><label for="nama" class="col-sm-2 control-label">Nama Event</label>
+                                        <div class="col-sm-8"><input type="text" name="nama" class="form-control" placeholder="Nama event..."/></div>
+                                </div>
+                                <div class="form-group"><label for="lokasi" class="col-sm-2 control-label">Lokasi</label>
+                                        <div class="col-sm-9"><input type="text" name="lokasi" class="form-control" placeholder="Lokasi..."/></div>
+                                </div>
+                                <div class="form-group"><label for="tanggal" class="col-sm-2 control-label">Tanggal</label>
+                                    <div class="col-sm-5"><input type="date" name="nama" id="datepicker" class="form-control" placeholder="Tanggal..."/>
+                                        </div>
+                                </div>
+                                <div class="form-group"><label for="deskripsi" class="col-sm-2 control-label">Deskripsi Event</label>
+                                    <div class="col-sm-9"><textarea cols="20" rows="10" type="text" name="deskripsi" class="form-control" placeholder="Deskripsi event..."></textarea></div>
+                                </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" name="submit" class="btn btn-default" value="Simpan"/>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <!-- akhir add event -->
+        </div>
+        
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="<?php echo base_url()?>assets/bootstrap/js/jquery-1.11.2.min.js"></script>
         <script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php echo base_url()?>assets/js/bootstrap-datepicker.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
     </body>
